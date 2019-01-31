@@ -1,0 +1,146 @@
+body {
+  background-color: #85a5d4;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: content-box;
+}
+
+.container {
+  padding: 1.2rem;
+  max-width: 20rem;
+  margin: 2rem auto;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+.wrapper-blocks {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  width: 20rem;
+  min-height: 20rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.wrapper:hover {
+  background-color: #f1f1f1;
+}
+
+.text {
+  color: #a7a7a7;
+  line-height: 1.5;
+  margin: 1rem 0 2rem 0;
+}
+
+.price {
+  color: #5572d6;
+  font-weight: bold;
+}
+
+.header {
+  margin: 0;
+  color: #5572d6;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+}
+
+/* IMG */
+.mobile-img {
+  background: url(img/device.svg) 0 0 no-repeat;
+}
+
+.desktop-img {
+  background: url(img/laptop.svg) 0 0 no-repeat;
+}
+
+.tv-img {
+  background: url(img/monitor.svg) 0 0 no-repeat;
+}
+
+.bgc-img {
+  width: 5rem;
+  height: 5rem;
+  background-size: cover;
+  margin: 1rem auto;
+}
+/* IMG END */
+
+.price {
+  font-size: 2rem;
+}
+
+.price small {
+  font-size: 1rem;
+}
+
+.dollar {
+  vertical-align: 10px;
+}
+
+/* POPUP */
+.popup-container {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  visibility: hidden;
+  width: 20rem;
+  padding: 0 1.5rem;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.close-img {
+  width: 1rem;
+  height: 1rem;
+  background: url(img/cross.svg) 0 -3px no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.confirm-head {
+  font-weight: bold;
+}
+
+.btn {
+  background-color: #3636f1;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 2rem;
+  margin: 1rem auto;
+  display: block;
+}
+
+/* MEDIA */
+@media screen and (min-width: 600px) {
+  .wrapper-blocks {
+    flex-direction: row;
+  }
+  .container {
+    min-width: 900px;
+    margin-top: 8rem;
+  }
+  .popup-container {
+    height: 100%;
+  }
+}
